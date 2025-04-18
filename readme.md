@@ -1,17 +1,53 @@
+Project by:
+Smit Patil - 16010122139
+Toyash Patil - 16010122140
+Khushi Poojary - 16010122147
+
+🎬 Movie Review Sentiment Analysis
+
+This project aims to develop a machine learning model to automatically classify movie reviews as positive or negative, based on the sentiment expressed in the text. It leverages Natural Language Processing (NLP) and logistic regression to analyze audience opinions, thereby offering valuable insights for filmmakers, studios, and review platforms.
+
+Workflow Summary:
+
+1. 🧠 Data Collection
+Collected movie review data from publicly available sources such as IMDb and Rotten Tomatoes, ensuring a balanced dataset with both positive and negative sentiments.
+
+2. 🧹 Text Preprocessing
+Cleaned and prepared the review text for analysis using the following steps:
+- Removal of special characters and punctuation
+- Conversion to lowercase
+- Tokenization (splitting text into words)
+- Removal of stopwords (e.g., “the”, “is”, “and”)
+
+3. 🏷️ Label Mapping
+Mapped sentiment labels to a binary format for model training:
+- 'positive' → 1
+- 'negative' → 0
+
+4. 🔡 Text Vectorization
+Used CountVectorizer to transform the cleaned text data into a numerical matrix of token counts, suitable for feeding into the machine learning model.
+
+5. 📊 Train-Test Split
+Split the dataset into:
+- Training set: 80%
+- Testing set: 20%
+This ensured a fair evaluation of model performance on unseen data.
+
+6. 🤖 Model Selection & Training
+Trained a Logistic Regression classifier on the vectorized training data to learn patterns and predict binary sentiment labels.
+
+7. 📈 Model Evaluation
+Evaluated the model’s effectiveness using:
+- Accuracy: Proportion of correct predictions
+- F1 Score: Balance between precision and recall
+
+8. 🔍 Prediction on New Data
+Tested the model with new, unseen sample reviews. These were preprocessed similarly and then classified as positive or negative based on the trained model.
+
+✅ Impact
+This sentiment analysis tool can help:
+- Filmmakers understand audience reactions
+- Studios make data-driven marketing decisions
+- Review websites automatically moderate or highlight feedback
+
 DATA SET LINK:- https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
-
-" Movie_review_analysis" This project develops a machine learning model for sentiment analysis on movie reviews, with the goal of automatically classifying reviews as positive or negative based on the sentiment expressed in the text. The project involves:
-
-Data Collection: Gathering data from sources such as IMDB or Rotten Tomatoes or any other sources. Text Preprocessing: Cleaning the text data by removing noise and normalizing the text. Model Selection and Training: Choosing and training machine learning models such as Logistic Regression or Support Vector Machines.(we chose logistic regression) Performance Evaluation: Assessing model performance using metrics like accuracy and F1-score. The deployed model will provide insights into audience sentiment towards movies, benefiting filmmakers, studios, and review websites by informing decision-making processes and enhancing the understanding of audience preferences. Data Preprocessing: Loaded the dataset, cleaned reviews by removing special characters, converting to lowercase, tokenizing, and removing stopwords to prepare text for modeling.
-
-Label Mapping: Converted sentiment labels to binary format, mapping 'positive' to 1 and 'negative' to 0.
-
-Text Vectorization: Used CountVectorizer to convert the cleaned reviews into a matrix of token counts for machine learning.
-
-Train-Test Split: Split the dataset into training (80%) and testing (20%) sets to evaluate model performance on unseen data.
-
-Logistic Regression Model: Trained a logistic regression classifier using the vectorized training data to predict binary sentiment labels.
-
-Evaluation: Predicted sentiments for test data, then calculated accuracy and F1 score to measure model performance.
-
-Prediction: Tested the model on new sample reviews, processed them similarly, and predicted whether they are positive or negative based on the trained model.
