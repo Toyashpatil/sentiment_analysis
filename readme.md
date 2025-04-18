@@ -7,13 +7,12 @@ Khushi Poojary - 16010122147
 
 This project aims to develop a machine learning model to automatically classify movie reviews as positive or negative, based on the sentiment expressed in the text. It leverages Natural Language Processing (NLP) and logistic regression to analyze audience opinions, thereby offering valuable insights for filmmakers, studios, and review platforms.
 
-Workflow Summary:
-
+📂 Workflow Summary
 1. 🧠 Data Collection
 Collected movie review data from publicly available sources such as IMDb and Rotten Tomatoes, ensuring a balanced dataset with both positive and negative sentiments.
 
 2. 🧹 Text Preprocessing
-Cleaned and prepared the review text for analysis using the following steps:
+- Cleaned and prepared the review text for analysis using the following steps:
 - Removal of special characters and punctuation
 - Conversion to lowercase
 - Tokenization (splitting text into words)
